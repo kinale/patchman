@@ -61,7 +61,7 @@ setup(
     description='Django based patch status monitoring tool for linux systems',
     license='GPLv3',
     keywords='django patch status monitoring linux spacewalk patchman',
-    packages=find_packages(),
+    packages=find_packages(exclude='*.pyc'),
     install_requires=install_requires,
     data_files=data_files,
     package_data={'': ['*.html'], },
